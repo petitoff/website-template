@@ -7,16 +7,27 @@ body {
   --clr-primary-2: #0e7c86;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* Menu */
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
 .main-nav {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+.main-nav li a {
+  color: var(--clr-primary-1);
+}
 .main-nav li {
   border-bottom: 2px solid transparent;
   font-size: 1rem;
   font-weight: normal;
-  color: var(--clr-primary-1);
   padding-bottom: 0.125em;
   text-decoration: none;
   text-transform: uppercase;
@@ -26,12 +37,8 @@ body {
   cursor: pointer;
 }
 .main-nav li:hover,
-.main-nav li.active {
+.main-nav li.active,
+.main-nav li a:hover {
   color: var(--clr-primary-2);
   border-bottom-color: var(--clr-primary-2);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: flex-end;
 }
