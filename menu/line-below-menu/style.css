@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --clr-primary-1: #102a42;
+  --clr-primary-2: #0e7c86;
+}
+
+.main-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-nav li {
+  border-bottom: 2px solid transparent;
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--clr-primary-1);
+  padding-bottom: 0.125em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: border-bottom-color 200ms ease 0s;
+  float: left;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.main-nav li:hover,
+.main-nav li.active {
+  color: var(--clr-primary-2);
+  border-bottom-color: var(--clr-primary-2);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+}
